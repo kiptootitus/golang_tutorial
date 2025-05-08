@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt" 
+	"strings"
+)
 
 import "booking-app/utils" // Import the utils package
 
@@ -59,7 +62,17 @@ func main() {
 		fmt.Printf("Slice type %T\n", bookings)
 		fmt.Printf("The length of Slice is %v\n", len(bookings))
 
-		fmt.Printf("All our bookings is: %v\n", bookings)
+	// Lets print the first names in the list 
+		firstNames := []string{}
+		
+		for _, booking := range bookings{
+				var names = strings.Fields(booking)
+				firstNames = append(firstNames, names[0])
+		}
+
+
+
+		fmt.Printf("The fist names in bookings are: %v\n", firstNames)
 
 	}
 
