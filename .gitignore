@@ -1,0 +1,7 @@
+
+terrafom-course/terraform.tfstate
+terrafom-course/.terraform.lock.hcl
+terrafom-course/terraform.tfstate.backup
+.env
+terrafom-course/.terraform/environment
+terrafom-course/.terraform/terraform.tfstate.env
